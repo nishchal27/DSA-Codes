@@ -1,9 +1,9 @@
-// https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1?page=1&difficulty[]=-1&category[]=Linked%20List&sortBy=submissions
+//https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1?page=1&difficulty[]=-1&category[]=Linked%20List&sortBy=submissions
 
-package Practice;
+package LinkedList;
 
-public class Q1 {
-/* Node is defined as
+public class PrintListElement {
+    /* Node is defined as
 class Node {
     int data;
     Node next;
