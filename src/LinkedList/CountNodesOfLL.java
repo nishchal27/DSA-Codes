@@ -1,5 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1?page=1&difficulty[]=-1&category[]=Linked%20List&sortBy=submissions
-// count node of LL
+// count node of LL; GFG
 
 package LinkedList;
 
