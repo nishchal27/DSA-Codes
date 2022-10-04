@@ -21,11 +21,10 @@ class Solution
     void display(Node head)
     {
        Node node = head;
-       while(node.next != null){
+       while(node != null){
            System.out.print(node.data + " ");
            node = node.next;
        }
-       System.out.print(node.data + " ");
     }
 }
 }
