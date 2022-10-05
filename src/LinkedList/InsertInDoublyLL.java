@@ -1,8 +1,7 @@
 //Insert node in a doubly linked list; accio job
 // https://course.acciojob.com/idle?question=c44249e8-0776-4bcf-883d-fbdad0c956a9
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+
+import java.util.Scanner;
 
 class Node{
     int val;
@@ -42,7 +41,7 @@ class LinkedList{
 }
 
 public class InsertInDoublyLL {
-    public static void main(String[] args) throws java.lang.Exception
+    public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
                 int n = sc.nextInt();
