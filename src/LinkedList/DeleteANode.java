@@ -1,4 +1,7 @@
-package Practice;
+// https://course.acciojob.com/idle?question=7b346e14-d70f-4dc0-a82f-f3c2f3da9646
+// Delete a Node; using position index.
+
+package LinkedList;
 
 import java.util.*;
 import java.lang.*;
@@ -76,7 +79,7 @@ class LinkedList{
     }
 }
 
-public class practice {
+public class DeleteANode {
     public static void main(String[] args) {
         int curr = 0;
         LinkedList l1 = new LinkedList();
@@ -91,3 +94,4 @@ public class practice {
        l1.show();
     }
 }
+
