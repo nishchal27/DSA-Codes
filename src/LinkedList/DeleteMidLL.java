@@ -16,26 +16,18 @@ public class DeleteMidLL {
  */
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
-        ListNode node = head;
-        int count = 0;
-        ListNode prev = head;
-        ListNode curr = head;
-        if(node == null){
-            return head;
+        ListNode prev = null;
+        ListNode hare = head, tort = head;
+        while(hare != null && hare.next != null){
+            prev = tort;
+            hare = hare.next.next;
+            tort = tort.next;
         }
-        while(node != null){
-            node = node.next;
-            count++;
+        if(prev == null){// your LL only has one node
+            return null;
         }
-        if(count == 1){
-            prev = null;
-            return prev;
-        }
-        for(int i =0; i<count/2; i++){ 
-               prev = curr;
-               curr = curr.next;
-        }
-        prev.next = prev.next.next;
+        // tort points at the node to be deleted, prev is the prev node
+        prev.next = tort.next;
         return head;
     }
 }

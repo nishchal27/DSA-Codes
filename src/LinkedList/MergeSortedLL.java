@@ -1,4 +1,7 @@
-package Practice;
+// https://course.acciojob.com/idle?question=0a80f2b0-70b8-4f71-85c6-761b1313dae5
+// Merge Sorted Linked Lists
+
+package LinkedList;
 
 import java.util.*;
 import java.lang.*;
@@ -37,10 +40,9 @@ class LinkedList {
     }
 }
 
-public class practice {
-
+public class MergeSortedLL {
     public static void mergeArrays(int[] arr1, int[] arr2, int n1,
-        int n2, int[] arr3) {
+            int n2, int[] arr3) {
         int i = 0, j = 0, k = 0;
 
         // Traverse both array
@@ -67,26 +69,26 @@ public class practice {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         int n = sc.nextInt();
         int arr1[] = new int[n];
-        for(int i =0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             arr1[i] = sc.nextInt();
         }
         int m = sc.nextInt();
         int arr2[] = new int[m];
-        for(int i =0; i<m; i++){
+        for (int i = 0; i < m; i++) {
             arr2[i] = sc.nextInt();
         }
-        int arr3[] = new int[n+m];
+        int arr3[] = new int[n + m];
 
         mergeArrays(arr1, arr2, n, m, arr3);
-        for(int i=0; i < n + m; i++){
+        for (int i = 0; i < n + m; i++) {
             // System.out.print(arr3[i] + " ");
         }
 
         LinkedList l1 = new LinkedList();
-        for (int i = 0; i < n+m; i++) {
+        for (int i = 0; i < n + m; i++) {
             l1.insert(arr3[i]);
         }
         l1.show();
