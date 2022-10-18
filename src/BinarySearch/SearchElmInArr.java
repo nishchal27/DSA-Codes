@@ -1,25 +1,20 @@
-package Practice;
+// https://practice.geeksforgeeks.org/problems/who-will-win-1587115621/1?page=1&difficulty[]=-1&category[]=Binary%20Search&sortBy=submissions
+// Searching an element in a sorted array
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+package BinarySearch;
 
-public class practice {
+public class SearchElmInArr {
     static int searchInSorted(int arr[], int N, int K)
     {
-        int low = 0, high = arr.length - 1;
+        int low = 0, high = N - 1;
         while(low <= high){
             int mid = (low + high) / 2; 
-            System.out.println(mid + " mid");
-            if(mid == K){
+            if(arr[mid] == K)
                 return 1;
-            }
-            else if(K > arr[mid]){
+            else if(arr[mid] < K)
                 low = mid + 1;
-            }
-            else if(K < arr[mid]){
+            else
                 high = mid - 1;
-            }
         }
         return -1;
     }
