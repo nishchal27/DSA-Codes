@@ -1,4 +1,7 @@
-package Practice;
+// https://course.acciojob.com/idle?question=4d529a8f-2016-4c69-9c8a-61329815420a
+// Palindrome Linked List
+
+package LinkedList;
 
 import java.util.*;
 import java.lang.*;
@@ -15,7 +18,7 @@ class Node {
     }
 }
 
-public class practice {
+public class PalindromeLL {
 
     static Node add(Node head, int val) {
         // I want to add node in the end
@@ -58,23 +61,23 @@ public class practice {
         return prev;
     }
 
-           //palindrome
-           static String palindrome(Node head){
-            if(head == null){
-                    return "YES";
-            }
-            Node mid = middle(head);
-            Node last = reverse(mid.next);
-
-            Node curr = head;
-            while(last != null){
-                    if(last.val != curr.val){
-                            return "NO";
-                    }
-                    last = last.next;
-                    curr = curr.next;
-            }
+    // palindrome
+    static String palindrome(Node head) {
+        if (head == null) {
             return "YES";
+        }
+        Node mid = middle(head);
+        Node last = reverse(mid.next);
+
+        Node curr = head;
+        while (last != null) {
+            if (last.val != curr.val) {
+                return "NO";
+            }
+            last = last.next;
+            curr = curr.next;
+        }
+        return "YES";
     }
 
     public static void main(String[] args) throws java.lang.Exception {
