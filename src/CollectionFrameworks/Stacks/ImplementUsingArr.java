@@ -1,7 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1?page=1&difficulty[]=-1&category[]=Stack&sortBy=submissions
 // Implement stack using array
 
-package Stacks;
+package CollectionFrameworks.Stacks;
 
 class MyStack {
     int top;

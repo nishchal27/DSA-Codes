@@ -1,7 +1,7 @@
 // https://course.acciojob.com/idle?question=6769c6d4-2193-4378-b704-08ab89c117bf
 // Reverse String Using Stack
 
-package Stacks;
+package CollectionFrameworks.Stacks;
 
 import java.util.*;
 

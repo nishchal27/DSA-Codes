@@ -1,4 +1,4 @@
-package Stacks;
+package CollectionFrameworks.Stacks;
 import java.util.*;
 
 public class Main {

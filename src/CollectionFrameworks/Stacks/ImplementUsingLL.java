@@ -1,7 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1?page=1&difficulty[]=-1&category[]=Stack&sortBy=submissions
 // Implement Stack using Linked List
 
-package Stacks;
+package CollectionFrameworks.Stacks;
 
 class MyStack {
     // class StackNode {
