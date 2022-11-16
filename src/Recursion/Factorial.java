@@ -2,18 +2,18 @@ package Recursion;
 
 public class Factorial {
 
-    public static int factorial(int n){
+    public static long factorial(long n){
         if(n == 1)
         return 1;
 
-        int sAns = factorial(n-1);
-        int ans = n * sAns;
+        long sAns = factorial(n-1);
+        long ans = n * sAns;
 
         return ans;
     }
 
     public static void main(String[] args){
-        int fac = factorial(5);
+        long fac = factorial(15);
         System.out.println(fac);
     }
 }
