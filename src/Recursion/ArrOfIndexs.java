@@ -7,6 +7,7 @@ public class ArrOfIndexs {
         if(idx == arr.length){
             int newArr[] = new int[count];
             return newArr;
+            //we're basically returning a reference(address) of the that array, not the actual array.
         }
 
         if(arr[idx] == tar){
@@ -14,6 +15,8 @@ public class ArrOfIndexs {
         }
         
         int ans[] = getIndices(idx+1, arr, tar, count);
+        //here after recursion we're getting refernce(address) of the array from the context.
+
         if(arr[idx] == tar){
             ans[count-1] = idx;
         }
@@ -28,6 +31,6 @@ public class ArrOfIndexs {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(Arrays.toString(getIndices(0, arr, 1,0)));
+        System.out.println(Arrays.toString(getIndices(0, arr, 3,0)));
     }
 }
