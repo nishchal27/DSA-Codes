@@ -12,7 +12,7 @@ public class HashingIntro {
         arr[14] = 14;
         arr[9] = 9;
 
-        //code a search function, which return the index of target element if it exists otherwise returns -1
+        //code a search function, which return the index of target element if it exists otherwise returns -1.
 
         System.out.println(search(2, arr)); //2
         System.out.println(search(13, arr)); //-1
