@@ -11,7 +11,7 @@ public class Count7 {
         System.out.println(count7(n));
         sc.close();
     }
-//
+//comment
     public static int count7(int n) {
         if (n < 1)
             return 0;
